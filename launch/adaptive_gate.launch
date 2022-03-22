@@ -1,0 +1,11 @@
+<launch>
+
+
+<!-- <node name="adaptive_gating" pkg="platooning_perception" type="adaptive_gating.py"> -->
+ <!--</node> -->
+
+ <node name="CAN" pkg="platooning_perception" type="canpump"> 
+ </node> 
+
+
+</launch>

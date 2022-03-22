@@ -1,0 +1,18 @@
+<launch>
+
+ <!-- <node name="perception" pkg="platooning_lane_det" type="perception1"> --> 
+ <!-- </node> -->
+
+<!-- <node name="lane_det" pkg="platooning_lane_det" type="onlyRlane3.py">-->
+ <!--</node> -->
+
+
+ <include file="$(find video_stream_opencv)/launch/video_file.launch"/>
+ <include file="$(find darknet_ros)/launch/jang.launch"/>
+ <!-- <include file="$(find usb_cam)/launch/usb_cam-test.launch"/>-->
+
+ <node name="CAN" pkg="platooning_lane_det" type="canpump"> 
+ </node> 
+
+
+</launch>
